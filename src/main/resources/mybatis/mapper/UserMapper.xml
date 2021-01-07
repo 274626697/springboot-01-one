@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hang.mapper.UserMapper">
+    <!--resultMap详细解释：https://www.cnblogs.com/luyuan-chen/p/11592237.html
+    <resultMap id="给ID名" type="实体类" >
+    <result column="数据库字段名" property="实体类属性" jdbcType="数据库字段类型" />
+    </resultMap>
+    -->
+    <!--<resultMap id="UserMap" type="com.hang.pojo.User">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="sex" property="sex"/>
+        <result column="age" property="age"/>
+    </resultMap>-->
+
+
+    <select id="queryUserList" resultType="User">
+       select * from user;
+    </select>
+
+</mapper>
