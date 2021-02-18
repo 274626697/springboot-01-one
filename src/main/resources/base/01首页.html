@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <!--确保适当的绘制和触屏缩放，需要在 <head> 之中添加 viewport 元数据标签-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--在移动设备浏览器上，通过为视口（viewport）设置 meta 属性为 user-scalable=no 可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式我们并不推荐所有网站使用，还是要看你自己的情况而定！-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--引入bootstrap核心CSS文件-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!--引入jQuery核心js-->
+    <script src="../bootstrap/js/jquery-3.5.1.min.js"></script>
+    <!--bootstrap核心js-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <img src="../resources/测试图片1.jpg" alt="..." class="img-circle center-block " height="200px" width="200px">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <h1 class="text-center">用户登录</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <form>
+                <div class="form-group">
+                    <label for="username">用户名：</label>
+                    <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码：</label>
+                    <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <!-- Standard button -->
+            <button type="submit" class="btn btn-default"> 点击登陆 </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 checkbox" >
+            <label >
+                <input type="checkbox"> 记住我
+            </label>
+        </div>
+    </div>
+
+</body>
+</html>

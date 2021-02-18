@@ -18,4 +18,6 @@ public class UserController {
     public List<User> queryUserList(){
         return userMapper.queryUserList();
     }
+
+
 }
